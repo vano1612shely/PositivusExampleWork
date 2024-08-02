@@ -1,0 +1,36 @@
+.testimonials {
+  &__header {
+    @apply text-center lg:text-left flex flex-col gap-[1.875rem] lg:flex-row lg:gap-[2.5rem] mb-[2.5rem] lg:mb-[5rem] items-center;
+  }
+
+  &__list {
+    @apply w-full rounded-[2.813rem] bg-dark pt-[1.875rem] pb-[3.75rem] lg:pt-[5.25rem] lg:pb-[4.25rem];
+  }
+  &__text {
+    @apply text-white border border-primary p-[1.875rem] lg:px-[3.25rem] lg:py-[3rem] rounded-[2.813rem] relative bg-dark block w-[18rem] lg:w-[37.5rem] mb-[1.25rem];
+    &:before {
+      content: '';
+      @apply absolute left-[15%] -bottom-[15px] border-transparent border-[15px] border-b-0 block w-0 border-t-primary;
+    }
+    &:after {
+      content: '';
+      @apply absolute left-[15%] -bottom-[14px] border-transparent border-[15px] border-b-0 block w-0 border-t-dark;
+    }
+  }
+
+  &__author {
+    @apply pl-[10%];
+  }
+
+  &__name {
+    @apply text-primary
+  }
+
+  &__position {
+    @apply text-white
+  }
+
+  &__carousel {
+    @apply w-full rounded-[2.813rem] bg-dark pt-[1.875rem] pb-[3.75rem] lg:pt-[5.25rem] lg:pb-[4.25rem] overflow-x-hidden;
+  }
+}

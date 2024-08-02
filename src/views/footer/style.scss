@@ -1,0 +1,40 @@
+.footer {
+
+  &__wrapper {
+    @apply w-full lg:w-[86%] m-auto lg:rounded-t-[2.813rem] px-[3.75rem] py-[3.438rem] bg-dark grid row-auto grid-cols-1 lg:grid-cols-8 gap-[3.75rem] items-center justify-items-center;
+  }
+  &__logo {
+    @apply lg:col-start-1 lg:col-end-3 col-start-1 col-end-1;
+  }
+  &__menu-list {
+    @apply flex flex-col lg:flex-row gap-[2.5rem] col-start-1 col-end-1 lg:col-start-3 lg:col-end-7 text-center;
+  }
+
+  &__menu-link {
+    @apply text-white text-base underline underline-offset-4
+  }
+
+  &__social-list {
+    @apply flex gap-[1.25rem] col-start-1 col-end-1 lg:col-start-7 lg:col-end-9 order-last lg:order-none;
+  }
+  &__social-img {
+    &:hover,
+    &:focus {
+      & path {
+        @apply fill-primary duration-200;
+      }
+    }
+  }
+
+  &__contact {
+    @apply flex flex-col gap-[1.25rem] text-white lg:col-start-1 lg:col-end-3 items-start col-start-1 col-end-1;
+  }
+
+  &__subscribe {
+    @apply flex flex-wrap lg:flex-nowrap lg:col-start-4 lg:col-end-9 gap-[1.25rem] py-[3.75rem] px-[2.5rem] rounded-[0.875rem] bg-dark2 w-full col-start-1 col-end-1;
+
+    & input, button {
+      @apply flex-1;
+    }
+  }
+}

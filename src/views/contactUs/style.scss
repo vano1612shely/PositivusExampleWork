@@ -1,0 +1,13 @@
+.contact-us {
+  @apply relative;
+  &__header {
+    @apply text-center lg:text-left flex flex-col gap-[1.875rem] lg:flex-row lg:gap-[2.5rem] mb-[2.5rem] lg:mb-[5rem] items-center;
+  }
+  &__form {
+    @apply w-full lg:w-auto lg:max-w-[34.75rem] flex flex-col gap-[1.5rem];
+  }
+
+  &__img {
+    @apply absolute -right-1/4 top-20;
+  }
+}

@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@layer base {
+  * {
+    @apply font-sans box-border m-0 p-0;
+  }
+  h1 {
+    @apply text-mob-h1 lg:text-h1 font-medium;
+  }
+  h2 {
+    @apply text-mob-h2 lg:text-h2 font-medium;
+  }
+  h3 {
+    @apply text-mob-h3 lg:text-h3 font-medium;
+  }
+  h4 {
+    @apply text-mob-h4 lg:text-h4 font-medium;
+  }
+  p {
+    @apply text-mob-base lg:text-base;
+  }
+}
+body {
+  @apply w-full overflow-x-hidden
+}
+.container {
+  @apply m-auto px-[1.25rem];
+}
+

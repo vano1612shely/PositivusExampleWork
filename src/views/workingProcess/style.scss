@@ -1,0 +1,13 @@
+.working-process {
+  &__header {
+    @apply text-center lg:text-left flex flex-col gap-[1.875rem] lg:flex-row lg:gap-[2.5rem] mb-[2.5rem] lg:mb-[5rem] items-center;
+  }
+
+  &__title {
+    @apply flex items-center text-mob-h4 lg:text-h3 font-medium gap-[1.563rem];
+  }
+
+  &__number {
+    @apply text-[3.75rem];
+  }
+}

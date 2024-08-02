@@ -1,0 +1,98 @@
+.link {
+  @apply flex gap-[0.938rem] items-center duration-200 ease-linear;
+  &__text {
+    @apply text-h4;
+  }
+  &__circle, &__path {
+    @apply duration-200 ease-linear;
+  }
+  &_simple {
+    .link__text {
+      @apply -order-1;
+    }
+    .link__circle {
+      @apply fill-transparent
+    }
+    &-primary {
+      @apply text-primary;
+      .link__path {
+        @apply fill-primary;
+      }
+      &:hover,
+      &:focus {
+        .link__circle {
+          @apply fill-white
+        }
+      }
+    }
+    &-dark {
+      @apply text-black;
+      .link__path {
+        @apply fill-dark;
+      }
+      &:hover,
+      &:focus {
+        .link__circle {
+          @apply fill-white
+        }
+      }
+    }
+    &-light {
+      @apply text-white;
+      .link__path {
+        @apply fill-white;
+      }
+      &:hover,
+      &:focus {
+        .link__circle {
+          @apply fill-dark
+        }
+      }
+    }
+  }
+  &_light {
+    @apply text-white;
+    .link__circle {
+      @apply fill-white;
+    }
+    .link__path {
+      @apply fill-primary;
+    }
+    &:hover,
+    &:focus{
+      .link__path {
+        @apply fill-dark;
+      }
+    }
+  }
+  &_dark {
+    @apply text-black;
+    .link__circle {
+      @apply fill-dark;
+    }
+    .link__path {
+      @apply fill-primary;
+    }
+    &:hover,
+    &:focus{
+      .link__path {
+        @apply fill-white;
+      }
+    }
+  }
+  &_primary {
+    @apply text-primary;
+    .link__circle {
+      @apply fill-primary;
+    }
+    .link__path {
+      @apply fill-black;
+    }
+    &:hover,
+    &:focus{
+      .link__path {
+        @apply fill-white;
+      }
+    }
+  }
+}

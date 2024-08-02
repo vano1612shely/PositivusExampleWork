@@ -1,0 +1,24 @@
+.button {
+  @apply rounded-[0.875rem] px-[2.188rem] py-[1.25rem] text-h4 duration-200 ease-linear;
+  &_primary {
+    @apply bg-primary border border-primary text-black;
+    &:hover,
+    &:focus {
+      @apply bg-white;
+    }
+  }
+  &_secondary {
+    @apply bg-dark text-white border border-dark;
+    &:hover,
+    &:focus {
+      @apply bg-white text-black;
+    }
+  }
+  &_outline {
+    @apply border border-dark bg-none;
+    &:hover,
+    &:focus {
+      @apply bg-dark text-white;
+    }
+  }
+}

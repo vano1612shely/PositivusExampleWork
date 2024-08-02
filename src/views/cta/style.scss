@@ -1,0 +1,10 @@
+.cta {
+  @apply flex justify-between items-center p-[3.125rem] lg:p-[3.75rem];
+  &__block {
+    @apply w-full lg:w-[31.25rem] flex flex-col items-start gap-[1.625rem];
+  }
+
+  &__img {
+    @apply hidden lg:block;
+  }
+}

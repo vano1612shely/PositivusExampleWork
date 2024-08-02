@@ -1,0 +1,21 @@
+.menu {
+  @apply flex items-center justify-between w-full;
+  &__list {
+    @apply list-none gap-[2.5rem] items-center hidden lg:flex;
+  }
+  &__button {
+    @apply lg:hidden w-[1.75rem] h-[1.5rem] z-20;
+  }
+  &__link {
+    @apply text-h4 duration-200 ease-linear inline-block;
+    &::after {
+      content: "";
+      transition: width 0.2s;
+      @apply block w-0 h-0.5 bg-black;
+    }
+    &:hover::after,
+    &:focus::after {
+      @apply w-full;
+    }
+  }
+}

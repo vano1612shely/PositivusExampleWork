@@ -1,0 +1,17 @@
+.case-studies {
+  @apply w-full overflow-x-hidden;
+  &__header {
+    @apply text-center lg:text-left flex flex-col gap-[1.875rem] lg:flex-row lg:gap-[2.5rem] mb-[2.5rem] lg:mb-[5rem] items-center;
+  }
+
+  &__list {
+    @apply lg:bg-dark lg:rounded-[2.813rem] flex list-none gap-[1.25rem] lg:gap-[4rem] lg:px-[3.75rem] lg:py-[4.375rem] text-white overflow-x-hidden;
+  }
+  &__item {
+    @apply flex flex-col gap-[1.25rem] bg-dark rounded-[2.813rem] lg:rounded-none lg:bg-transparent w-[350px] lg:flex-1 px-[3.125rem] py-[2.625rem] lg:p-0 flex-shrink-0;
+  }
+
+  &__separator {
+    @apply w-[1px] h-[80] bg-white;
+  }
+}

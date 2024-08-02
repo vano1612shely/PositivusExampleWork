@@ -1,0 +1,6 @@
+.textarea {
+  @apply py-[1.125rem] px-[1.875rem] border-black border rounded-[0.875rem] resize-none;
+  &_resizeble {
+    @apply resize-y
+  }
+}

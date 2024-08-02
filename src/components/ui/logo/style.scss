@@ -1,0 +1,9 @@
+.logo {
+  @apply w-[9rem] md:w-[10rem] xl:w-[13.75rem];
+  &_dark {
+    @apply fill-black;
+  }
+  &_light {
+    @apply fill-white;
+  }
+}

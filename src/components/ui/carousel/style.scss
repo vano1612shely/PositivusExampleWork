@@ -1,0 +1,35 @@
+.carousel {
+  @apply w-full overflow-x-hidden flex flex-col;
+
+  &__list {
+    @apply flex items-stretch;
+  }
+  &__slide {
+    @apply px-[5px] lg:px-[25px] min-w-[200px] flex-shrink-0;
+  }
+  &__control {
+    @apply flex justify-between items-center m-auto w-full px-[1.875rem] lg:w-[50%]
+  }
+  &__mark {
+    @apply cursor-pointer;
+    &_active {
+      & path {
+        @apply fill-primary;
+      }
+    }
+  }
+  &__marks {
+    @apply flex gap-[1.25rem] items-center m-auto;
+  }
+  &__button {
+    @apply w-[20px];
+    & path {
+      @apply opacity-30 duration-200
+    }
+    &:hover {
+      & path {
+        @apply opacity-100
+      }
+    }
+  }
+}

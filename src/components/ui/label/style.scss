@@ -1,0 +1,12 @@
+.label {
+  @apply rounded-[0.438rem] bg-dark inline-block px-[0.438rem] text-black;
+  &_primary {
+    @apply bg-primary;
+  }
+  &_dark {
+    @apply bg-dark text-white;
+  }
+  &_light {
+    @apply bg-white text-black;
+  }
+}

@@ -1,0 +1,14 @@
+.header {
+  @apply pt-[1.875rem] lg:pt-[3.75rem] flex flex-col items-start gap-[4.375rem];
+
+  &__content {
+    @apply flex justify-between w-full;
+  }
+
+  &__text {
+    @apply text-h4;
+  }
+  &__button {
+    @apply w-full lg:w-auto;
+  }
+}

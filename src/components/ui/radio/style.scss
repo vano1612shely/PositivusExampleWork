@@ -1,0 +1,19 @@
+.radio {
+  @apply relative cursor-pointer text-mob-base lg:text-base pl-[2rem];
+  &__input {
+    @apply hidden;
+
+    &:checked ~ .radio__checkmark:after {
+      @apply block;
+    }
+  }
+
+  &__checkmark {
+      @apply absolute top-0 left-0 w-[1.75rem] h-[1.75rem] bg-white border border-black rounded-[50%] duration-200;
+
+    &:after {
+      content: "";
+      @apply hidden absolute w-[1rem] h-[1rem] bg-primary left-[calc(50%_-_0.5rem)] top-[calc(50%_-_0.5rem)] rounded-[50%];
+    }
+  }
+}

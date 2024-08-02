@@ -1,0 +1,9 @@
+.clients {
+  @apply flex flex-col items-center w-full gap-[1.25rem] lg:flex-row lg:gap-[6rem] overflow-x-hidden;
+  &__block {
+    @apply flex items-center flex-1 justify-around w-full gap-[2.375rem] lg:gap-[6rem];
+  }
+  &__logo {
+    @apply min-w-[7rem]
+  }
+}
